@@ -1,0 +1,12 @@
+{
+  "name": "InterCloneReactNative",
+  "displayName": "InterCloneReactNative",
+  "expo": {
+    "name": "InterCloneReactNative",
+    "slug": "InterCloneReactNative",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
