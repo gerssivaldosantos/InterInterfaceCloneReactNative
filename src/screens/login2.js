@@ -4,7 +4,7 @@ import { Text, TextInput, View, TouchableOpacity, Alert } from "react-native";
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import styles from "../styles/login2";
-export default function Login2() {
+export default function Login2({route}) {
   return (
     <View style={styles.mainContainer}>
       <View style={styles.titleContainer}>
@@ -12,7 +12,7 @@ export default function Login2() {
       </View>
 
       <View style={styles.inputContainer}>
-        <Text style={styles.titleInput}>NÙMERO DA CONTA AQUI?</Text>
+        <Text style={styles.titleInput}>{route.params?.accountNumber}</Text>
         <TextInput
           style={styles.input}
           placeholder="Digite a conta como digito"
