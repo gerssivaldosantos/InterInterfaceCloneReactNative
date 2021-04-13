@@ -1,5 +1,4 @@
 import { StyleSheet } from "react-native";
-
 const styles = StyleSheet.create({
   mainContainer: {
     flex: 1,
@@ -19,10 +18,11 @@ const styles = StyleSheet.create({
   titleInput: {
     position: "absolute",
     left: 30,
+    top:15
   },
   input: {
     paddingLeft: 15,
-    width: "85%",
+    width: "90%",
     height: 50,
     borderRadius: 10,
     top: 40,
@@ -32,9 +32,9 @@ const styles = StyleSheet.create({
   },
   button: {
     borderRadius: 9,
-    top: 135,
+    top: 125,
     backgroundColor: "#ff7a01",
-    width: "85%",
+    width: "90%",
     alignItems: "center",
     justifyContent: "center",
     height: 45,
@@ -42,22 +42,24 @@ const styles = StyleSheet.create({
   buttonTitle: {
     color: "white",
     fontWeight: "bold",
+    fontSize:15
   },
   title: {
     color: "#ff7a01",
     fontSize: 40,
     fontWeight: "bold",
     position: "absolute",
-    top: 85,
+    top: 90,
   },
   createAccountText: {
     color: "#ff7a01",
-    top: 160,
+    top: 155,
     fontWeight: "bold",
   },
   needHelpText: {
     color: "#ff7a01",
-    top: 375,
+    position:'absolute',
+    bottom:50,
     fontWeight: "bold",
   },
 });
