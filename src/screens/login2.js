@@ -3,7 +3,7 @@ import React from "react";
 import { Text, TextInput, View, TouchableOpacity, Alert } from "react-native";
 import styles from "../styles/login2";
 import Account from '../components/account'
-export default function Login2({route}) {
+export default function Login2({route, navigation}) {
   return (
     <View style={styles.mainContainer}>
       <View style={styles.titleContainer}>
@@ -21,7 +21,7 @@ export default function Login2({route}) {
         placeholder="Senha"
         selectionColor="#ff7a01" />
         <TouchableOpacity
-          onPress={() => Alert.alert("", "Logando..")}
+          onPress={() => navigation.navigate("Home", {accountNumber: route.params?.accountNumber}) }
           style={styles.button}
         >
           <Text style={styles.buttonTitle}>Entrar</Text>
