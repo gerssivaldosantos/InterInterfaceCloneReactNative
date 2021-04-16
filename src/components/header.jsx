@@ -62,12 +62,12 @@ const styles = StyleSheet.create({
     },
     balanceIcon:{
         
-        top:0,
-        left:120
+        top:-8,
+        left:135
     },
 
     balanceFooter:{
-        top:65,
+        top:0,
         color:"#ffffff80",
         left:20
     },
