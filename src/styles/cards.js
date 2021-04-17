@@ -1,53 +1,33 @@
+import { StyleSheet } from "react-native";
 
-import {StyleSheet } from "react-native";
 const styles = StyleSheet.create({
-    container: {
-        //backgroundColor:'black',
-        height:135,
-      alignItems: "center",
-      width: '100%',
+  container: {
+    marginTop: 20,
+    height: 100,
+    width: "100%",
+  },
+  card: {
+    marginLeft: 15,
+    backgroundColor: "#ffffff",
+    height: 220,
+    width: 360,
+    borderRadius: 10,
+    shadowColor: "#000",
+    shadowOffset: {
+      width: 0,
+      height: 2,
     },
-    colapse1: {
-      position: "absolute",
-      borderRadius: 12,
-      top: -40,
-      left: 20,
-      width: 120,
-      height: 120,
-      backgroundColor: "#ffff",
-      alignItems: "center",
-      justifyContent: "flex-end",
-      paddingBottom: 10,
-    },
-    colapse2: {
-      position: "absolute",
-      borderRadius: 12,
-      top: -40,
-      width: 120,
-      height: 120,
-      backgroundColor: "#ffff",
-      alignItems: "center",
-      justifyContent: "flex-end",
-      paddingBottom: 10,
-    },
-    colapse3: {
-      position: "absolute",
-      borderRadius: 12,
-      top: -40,
-      right: 20,
-      width: 120,
-      height: 120,
-      backgroundColor: "#ffff",
-      alignItems: "center",
-      justifyContent: "flex-end",
-      paddingBottom: 10,
-    },
-    arrowButton:{
-        top:97,
-    },
-    arrowButtonIcon:{
+    shadowOpacity: 0.1,
+    shadowRadius: 1.84,
 
-    }
-  });
+    elevation: 0.5,
+  },
+  cardTitle:{
+      marginTop:15,
+      marginLeft:20,
+      fontWeight:'bold',
+      fontSize:20
+  }
+});
 
-  export default styles;
+export default styles;
