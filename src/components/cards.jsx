@@ -6,13 +6,18 @@ export default function Cards() {
     <ScrollView horizontal={true} style={styles.container}>
       <View style={styles.card}>
         <Text style={styles.cardTitle}>É empreendedor MEI?</Text>
-        <Image />
-        <Text>
+        <Image source={require("../assets/card1.png")} style={styles.cardImage} />
+        <View style={styles.textButtonContainer}>
+        <Text style={styles.cardText}>
           Conte também com os serviços gratuitos do Inter para seu negócio
         </Text>
-        <TouchableOpacity>
-          <Text>Abrir conta MEI</Text>
+        <TouchableOpacity 
+        onPress={()=> alert("create MEI account")}
+        style={styles.cardButton}>
+          <Text style={styles.cardButtonText}>Abrir conta MEI</Text>
         </TouchableOpacity>
+        </View>
+      
       </View>
 
 
